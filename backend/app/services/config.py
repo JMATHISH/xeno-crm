@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./brew_crm.db"
     GEMINI_API_KEY: str = ""
     CHANNEL_SERVICE_URL: str = "http://localhost:8001"
-    CRM_RECEIPT_URL: str = "http://localhost:8000"
+    CRM_RECEIPT_URL = "https://xeno-crm-zcs5.onrender.com"
     FRONTEND_URL: str = "http://localhost:3000"
     REDIS_URL: str = "redis://localhost:6379/0"
     # Email / SMTP settings
