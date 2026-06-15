@@ -1,0 +1,10 @@
+<html>
+  <body style="font-family: Arial, sans-serif; color: #111;">
+    <h2>Special Discount for you, {{ name }}</h2>
+    <p>Grab this limited-time discount:</p>
+    <p style="font-weight:bold;">{{ offer_text }}</p>
+  <p><a href="{{ click_url or cta_url }}">Get the discount</a></p>
+  <img src="{{ open_pixel_url }}" alt="" width="1" height="1" style="display:none;" />
+    <p>- Brew & Co</p>
+  </body>
+</html>

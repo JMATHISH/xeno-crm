@@ -1,0 +1,10 @@
+<html>
+  <body style="font-family: Arial, sans-serif; color: #111;">
+    <h2>Hi {{ name }} 👋</h2>
+    <p>Thanks for being a loyal Brew & Co customer. We've reserved something special:</p>
+    <p style="font-weight:bold;">{{ offer_text }}</p>
+  <p><a href="{{ click_url or cta_url }}">View your loyalty reward</a></p>
+  <img src="{{ open_pixel_url }}" alt="" width="1" height="1" style="display:none;" />
+    <p>With gratitude,<br/>Brew & Co</p>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: brew-crm-backend
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+      - key: GEMINI_API_KEY
+      - key: SMTP_HOST
+      - key: SMTP_PORT
+      - key: SMTP_USERNAME
+      - key: SMTP_PASSWORD
+      - key: SMTP_FROM_EMAIL
+      - key: FRONTEND_URL

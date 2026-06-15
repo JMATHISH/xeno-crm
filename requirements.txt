@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+faker
+pandas
+python-dotenv
+httpx
+pydantic
+python-multipart
+pydantic-settings
+anthropic
+reportlab
+fastapi-mail
+twilio
