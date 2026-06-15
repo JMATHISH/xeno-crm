@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Plus, Edit2, Trash2, Eye } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = 'https://xeno-crm-zcs5.onrender.com';
 
 function TemplateModal({ visible, template, onClose, onSave }) {
   const [name, setName] = useState(template?.name || '');

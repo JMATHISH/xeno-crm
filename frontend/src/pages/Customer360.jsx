@@ -3,7 +3,7 @@ import axios from 'axios';
 import { ArrowLeft, Calendar, Users, DollarSign, MessageSquare, FileText } from 'lucide-react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE_URL = 'https://xeno-crm-zcs5.onrender.com';
 
 export default function Customer360({ id: propId = null }) {
   const { id: routeId } = useParams() || {};
